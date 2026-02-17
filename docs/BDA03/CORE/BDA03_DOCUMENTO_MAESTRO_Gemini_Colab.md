@@ -12,6 +12,13 @@ en **Google Colab** con **Gemini integrado**, manteniendo control humano y asegu
 ## Fuente primaria
 El agente debe basarse primero en: docs/BDA03/CORE/ENUNCIADO_BDA03.md
 
+## Referencia obligatoria de estilo
+- Referencia de estilo (CORE): [docs/BDA03/CORE/REFERENCIA_ESTILO_CUADERNOS_BDA03.md](docs/BDA03/CORE/REFERENCIA_ESTILO_CUADERNOS_BDA03.md)
+- Cuaderno Pig de referencia: [BDA03_cuadernos/0301_Apache_Pig.ipynb](BDA03_cuadernos/0301_Apache_Pig.ipynb)
+- Cuaderno Spark+Hive+HQL de referencia: [BDA03_cuadernos/0305_Importación_de_datos_en_Hive_utilizando_PySpark.ipynb](BDA03_cuadernos/0305_Importación_de_datos_en_Hive_utilizando_PySpark.ipynb)
+- Antes de escribir código de Pig, Spark, Hive o HQL, el agente debe revisar estos cuadernos y aplicar el mismo estilo operativo.
+- Se mantienen reglas fijas: Java 17 obligatorio, `-9` como missing y consultas HQL con JOIN real.
+
 ## Estructura documental CORE vs SUPPORT
 
 ### CORE (fuente primaria)

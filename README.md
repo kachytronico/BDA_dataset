@@ -41,9 +41,10 @@ También incorpora documentos de control para checklist final, estilo técnico y
 3. [docs/BDA03/CORE/BDA03_GUIA_OPERATIVA_EVALUACION.md](docs/BDA03/CORE/BDA03_GUIA_OPERATIVA_EVALUACION.md)  
 4. [docs/BDA03/CORE/BDA03_DOCUMENTO_MAESTRO_Gemini_Colab.md](docs/BDA03/CORE/BDA03_DOCUMENTO_MAESTRO_Gemini_Colab.md)  
 5. [docs/BDA03/CORE/DATASET_CARD.md](docs/BDA03/CORE/DATASET_CARD.md)  
-6. [docs/BDA03/SUPPORT/BDA03_CHECKLIST_FINAL.md](docs/BDA03/SUPPORT/BDA03_CHECKLIST_FINAL.md)  
-7. [docs/BDA03/SUPPORT/BDA03_DEBUG_GUIDE.md](docs/BDA03/SUPPORT/BDA03_DEBUG_GUIDE.md)  
-8. [BDA03_cuadernos/0305_Importación_de_datos_en_Hive_utilizando_PySpark.ipynb](BDA03_cuadernos/0305_Importación_de_datos_en_Hive_utilizando_PySpark.ipynb)
+6. [docs/BDA03/CORE/REFERENCIA_ESTILO_CUADERNOS_BDA03.md](docs/BDA03/CORE/REFERENCIA_ESTILO_CUADERNOS_BDA03.md)  
+7. [docs/BDA03/SUPPORT/BDA03_CHECKLIST_FINAL.md](docs/BDA03/SUPPORT/BDA03_CHECKLIST_FINAL.md)  
+8. [docs/BDA03/SUPPORT/BDA03_DEBUG_GUIDE.md](docs/BDA03/SUPPORT/BDA03_DEBUG_GUIDE.md)  
+9. [BDA03_cuadernos/0305_Importación_de_datos_en_Hive_utilizando_PySpark.ipynb](BDA03_cuadernos/0305_Importación_de_datos_en_Hive_utilizando_PySpark.ipynb)
 
 ## Estructura documental BDA03
 
@@ -72,6 +73,7 @@ Antes de proponer o escribir código:
 - [docs/BDA03/CORE/BDA03_DOCUMENTO_MAESTRO_Gemini_Colab.md](docs/BDA03/CORE/BDA03_DOCUMENTO_MAESTRO_Gemini_Colab.md)
 - [docs/BDA03/CORE/BDA03_GUIA_OPERATIVA_EVALUACION.md](docs/BDA03/CORE/BDA03_GUIA_OPERATIVA_EVALUACION.md)
 - [docs/BDA03/CORE/DATASET_CARD.md](docs/BDA03/CORE/DATASET_CARD.md)
+- Referencia de estilo (CORE): docs/BDA03/CORE/REFERENCIA_ESTILO_CUADERNOS_BDA03.md
 
 **Soporte (SUPPORT, solo bajo demanda):**
 - [docs/BDA03/SUPPORT/BDA03_GUIA_ESTILO.md](docs/BDA03/SUPPORT/BDA03_GUIA_ESTILO.md)
