@@ -4,6 +4,14 @@ Este documento define el **método de trabajo** para resolver la **tarea de eval
 en **Google Colab** con **Gemini integrado**, manteniendo control humano y asegurando una entrega
 **evaluable** (con evidencias visibles y conclusiones basadas en outputs reales).
 
+## Documentos de referencia (leer primero)
+- docs/ENUNCIADO_BDA03.md (enunciado oficial)
+- docs/BDA03_GUIA_OPERATIVA_EVALUACION.md (pasos + evidencia mínima)
+- docs/BDA03_DOCUMENTO_MAESTRO_Gemini_Colab.md (reglas anti-bloqueo)
+
+## Fuente primaria
+El agente debe basarse primero en: docs/ENUNCIADO_BDA03.md
+
 ---
 
 ## 1) Filosofía (lo que manda siempre)

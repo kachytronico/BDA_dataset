@@ -1,0 +1,106 @@
+[{
+  "speaker": "Hassan Arteaga Rodriguez",
+  "id": "6e3bed84-bd7e-4c6b-a168-c43b65df59b6",
+  "event_name": "CosmosDB Conf",
+  "event_country":"MEXICO",
+  "init_date": 20180613,
+  "end_date": 20180615,
+  "activities": [
+    {
+      "title": "Using CosmosDB",
+      "duration": 30,
+      "type": "conference"
+    },
+    {
+      "title": "Querying CosmosDB",
+      "duration": 60,
+      "type": "lab"
+    },
+    {
+      "title": "CosmosDB + Azure Functions",
+      "duration": 45,
+      "type": "lab"
+    }
+  ]
+},
+{
+    "speaker": "Hassan Arteaga Rodriguez",
+    "id": "204831ad-d190-49f9-93d0-e12314bff87d",
+    "event_name": "Vue.js Conf 2018",
+    "event_country":"USA",
+    "init_date": 20180501,
+    "end_date": 20180503,
+    "activities": [
+      {
+        "title": "In Vue we trust",
+        "duration": 30,
+        "type": "conference"
+      },
+      {
+        "title": "Get data with Axios in Vue.js",
+        "duration": 30,
+        "type": "conference"
+      }
+    ]
+  },
+  {
+    "speaker": "Lourdes M. Guada del Castillo",
+    "id": "a4b0e429-3455-4396-84a7-f240871f0193",
+    "event_name": "IoT Space",
+    "event_country":"GERMANY",
+    "init_date": 20180621,
+    "end_date": 20180625,
+    "activities": [
+      {
+        "title": "CosmosDB in IoT Architectures",
+        "duration": 30,
+        "type": "conference"
+      },
+      {
+        "title": "Inserting IoT Metrics in CosmosDB",
+        "duration": 60,
+        "type": "lab"
+      }
+    ]
+  },
+  {
+    "speaker": "Lourdes M. Guada del Castillo",
+    "id": "70fc0d83-768e-42b6-b8a6-a2ac21eeaa40",
+    "event_name": "CosmosDB Conf",
+    "event_country":"MEXICO",
+  "init_date": 20180613,
+  "end_date": 20180615,
+    "activities": [
+      {
+        "title": "CosmosDB PaaS",
+        "duration": 30,
+        "type": "conference"
+      },
+      {
+        "title": "Planning RU for CosmosDB collection",
+        "duration": 60,
+        "type": "lab"
+      }
+    ]
+  },
+  {
+    "speaker": "Zamir Alejandro Arteaga",
+    "id": "f3c965b4-39e8-4e58-af5a-b5c88019246c",
+    "event_name": "Cloud Conference 2018",
+    "event_country":"MEXICO",
+    "init_date": 20180411,
+    "end_date": 20180412,
+    "activities": [
+      {
+        "title": "CosmosDB a New Global Database",
+        "duration": 30,
+        "type": "conference"
+      },
+      {
+        "title": "Developing App with CosmosDB",
+        "duration": 30,
+        "type": "conference"
+      }
+    ]
+  }
+]
