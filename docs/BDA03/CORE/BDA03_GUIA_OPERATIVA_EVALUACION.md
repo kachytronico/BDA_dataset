@@ -6,10 +6,12 @@ para maximizar nota y reducir riesgo.
 ---
 
 ## 0) Prioridad de fuentes
-1. Enunciado oficial
-2. Tutorías del profesor
-3. Cuadernos de ejemplo de BDA03
-4. Teoría / resúmenes
+1. docs/BDA03/CORE/ENUNCIADO_BDA03.md
+2. docs/BDA03/CORE/BDA03_GUIA_OPERATIVA_EVALUACION.md
+3. docs/BDA03/CORE/BDA03_DOCUMENTO_MAESTRO_Gemini_Colab.md
+4. docs/BDA03/CORE/DATASET_CARD.md
+5. docs/BDA03/SUPPORT/BDA03_I7_Guia_Tutor.md (si hay dudas de interpretación)
+6. docs/teoria/BDA02_resumen.md
 
 ---
 

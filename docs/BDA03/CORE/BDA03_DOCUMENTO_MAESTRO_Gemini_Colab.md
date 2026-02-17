@@ -5,12 +5,29 @@ en **Google Colab** con **Gemini integrado**, manteniendo control humano y asegu
 **evaluable** (con evidencias visibles y conclusiones basadas en outputs reales).
 
 ## Documentos de referencia (leer primero)
-- docs/ENUNCIADO_BDA03.md (enunciado oficial)
-- docs/BDA03_GUIA_OPERATIVA_EVALUACION.md (pasos + evidencia mínima)
-- docs/BDA03_DOCUMENTO_MAESTRO_Gemini_Colab.md (reglas anti-bloqueo)
+- docs/BDA03/CORE/ENUNCIADO_BDA03.md (enunciado oficial)
+- docs/BDA03/CORE/BDA03_GUIA_OPERATIVA_EVALUACION.md (pasos + evidencia mínima)
+- docs/BDA03/CORE/BDA03_DOCUMENTO_MAESTRO_Gemini_Colab.md (reglas anti-bloqueo)
 
 ## Fuente primaria
-El agente debe basarse primero en: docs/ENUNCIADO_BDA03.md
+El agente debe basarse primero en: docs/BDA03/CORE/ENUNCIADO_BDA03.md
+
+## Estructura documental CORE vs SUPPORT
+
+### CORE (fuente primaria)
+- docs/BDA03/CORE/ENUNCIADO_BDA03.md
+- docs/BDA03/CORE/BDA03_GUIA_OPERATIVA_EVALUACION.md
+- docs/BDA03/CORE/BDA03_DOCUMENTO_MAESTRO_Gemini_Colab.md
+- docs/BDA03/CORE/DATASET_CARD.md
+
+### SUPPORT (consulta bajo demanda)
+- docs/BDA03/SUPPORT/BDA03_CHECKLIST_FINAL.md
+- docs/BDA03/SUPPORT/BDA03_DEBUG_GUIDE.md
+- docs/BDA03/SUPPORT/BDA03_GUIA_ESTILO.md
+- docs/BDA03/SUPPORT/BDA03_I7_Guia_Tutor.md
+- docs/BDA03/SUPPORT/BDA03_I0_Analisis_Estrategico.md
+
+No consultar SUPPORT salvo que el usuario lo pida o el estado lo requiera: (a) redacción → GUIA_ESTILO, (b) antes de entregar → CHECKLIST, (c) error → DEBUG, (d) dudas de rúbrica → I7.
 
 ---
 
