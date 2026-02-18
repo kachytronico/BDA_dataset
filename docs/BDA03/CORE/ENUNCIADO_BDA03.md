@@ -1,95 +1,93 @@
 # ENUNCIADO — BDA03 Tarea de Evaluación
-## Ecosistema Hadoop-Spark (proceso completo ETL)
+## Ecosistema Hadoop–Spark (proceso completo ETL)
 
-## Descripción de la tarea
+> **Este enunciado está formateado para que tus agentes (Copilot/Gemini) respeten la numeración REAL del profesor.**  
+> La explicación del dataset **NO es el punto 1**: es un requisito previo “fuera” de la lista numerada 1–5.
 
-Ahora que ya conocemos todo el ecosistema Hadoop-Spark en profundidad, vamos a realizar un ejercicio que abarque todo el proceso de tratamiento de datos: desde que se extraen de un repositorio, se limpian, se transforman, se exportan a una base de datos relacional (Hive) y se realizan consultas sobre ellos.
+---
 
-Para ello, recupera los conjuntos de datos que usaste en la tarea anterior BDA01 - Tarea de Evaluación. Recuerda que usaste un conjunto de datos de tu elección 
-## Entregable
+## Contexto general
+Vamos a realizar un ejercicio que cubra el proceso completo de tratamiento de datos:
+importación → exploración → limpieza → carga en Hive → consultas HQL con JOIN.
 
-Debes entregar un cuaderno de Colab con:
+**Dataset:** recupera los conjuntos de datos que usaste en **BDA01 — Tarea de Evaluación** (Kaggle u otro repositorio).
 
-### 1) Explicación del conjunto de datos elegido
-- Cuál es su temática.
-- Cuál es su tamaño.
-- Con qué campos se relaciona.
-- Por qué puede resultar interesante.
+---
 
-### 2) Importación automática de los datos
+# ✅ Lo que debes entregar en el cuaderno (estructura correcta)
+
+## A) Explicación del conjunto de datos (va ANTES de la lista 1–5)
+En el notebook debe aparecer **primero** un bloque explicativo con:
+
+- **Temática:** de qué trata el dataset.
+- **Tamaño:** nº de filas/columnas y/o tamaño en MB por archivo.
+- **Relación:** con qué campos se relacionan los archivos/tablas (clave de unión).
+- **Interés:** por qué es un dataset interesante para ETL/análisis.
+
+> **Evidencia mínima recomendada:** `shape`, `head(3)` y una frase justificando la clave de relación.
+
+---
+
+## B) Una vez quede claro el contexto: pasos 1–5 (numeración del profesor)
+
+### 1. Importación automática (Kaggle u otro repositorio)
 Importa de manera automática tus conjuntos de datos desde Kaggle u otro repositorio.
+Pista: puedes usar `kaggle`, `opendatasets` u otras opciones; también `sqoop` si aplica por origen.
 
-Pistas de herramientas posibles:
-- Librería `kaggle`.
-- Librería `opendatasets`.
-- Otras opciones equivalentes.
-- `Sqoop` (dependiendo de dónde se encuentren los datos).
+> **Evidencia mínima recomendada:** comando de descarga/clonado + `ls -lh` mostrando archivos presentes y tamaño > 0.
 
-### 3) Exploración inicial con Pandas
-Usa Pandas para realizar una primera visualización en forma de tabla y estudiar los datos:
-- Valores nulos.
-- Fechas con formatos incorrectos.
-- Campos vacíos.
-- Otros problemas de calidad de datos.
+---
 
-### 4) Limpieza y tratamiento con Apache Pig
+### 2. Exploración inicial con Pandas
+Usa Pandas para una primera visualización en forma de tabla y estudiar los datos:
+- valores nulos,
+- fechas con formatos incorrectos,
+- campos vacíos,
+- otros problemas de calidad.
+
+> **Importante:** aquí debes **identificar problemas reales** que luego corregirás en el paso 3 (Pig).
+
+---
+
+### 3. Apache Pig
 Usa Apache Pig para:
-- Corregir los fallos observados en el punto anterior.
-- Modificar al menos dos campos (por ejemplo: cambiar formatos de fechas y rellenar campos vacíos/nulos con valores por defecto).
-- Realizar un tratamiento de datos que consideres interesante (por ejemplo, encontrar las 3 palabras más repetidas en ambos archivos).
 
-### 5) Persistencia y consultas con Spark + Hive
+**3.1 Corregir fallos detectados en Pandas**  
+- Debes **modificar al menos 2 campos** (ej.: cambiar formato de fechas, rellenar vacíos/nulos con valores por defecto, normalizar claves, reemplazar códigos de missing como `-9`, etc.).
+
+**3.2 Tratamiento de datos “interesante”**  
+- Por ejemplo: encontrar las 3 palabras más repetidas en ambos archivos (o una alternativa equivalente que tenga sentido con tu dataset).
+
+> **Evidencia mínima recomendada:** script `.pig` visible + ejecución `pig` + muestra del output y explicación breve.
+
+---
+
+### 4. Spark (PySpark) → Hive
 Usa Spark (PySpark) para importar tus ficheros a una base de datos relacional Hive.
 
-Realiza al menos dos consultas HQL que impliquen dos tablas.
+> **Evidencia mínima recomendada:** creación/guardado de tablas Hive y una consulta simple de verificación (p.ej. `show tables`, `select count(*)`).
 
-## Criterios de calificación
+---
 
-La tarea se calificará de 0 a 10 cuando termine la unidad:
+### 5. Consultas HQL (mínimo 2) con JOIN entre dos tablas
+Realiza al menos **dos consultas HQL** que impliquen **dos tablas** (JOIN real), no solo consultas sobre una única tabla.
 
-- 1 punto: apartado 1.
-- 1 punto: apartado 2.
-- 3 puntos: apartado 3 (1,5 por subapartado).
-- 2 puntos: apartado 4.
-- 3 puntos: apartado 5 (1,5 por consulta).
+> **Evidencia mínima recomendada:** dos queries con `JOIN` + salida con resultados.
 
-Esta tarea tiene efecto directo en tu nota. Puedes consultar los BDA Criterios de calificación para ver el peso exacto.
+---
 
-## Recursos necesarios
+# Criterios de calificación (0 a 10)
+- **1 punto:** Explicación del dataset (sección A)
+- **1 punto:** Paso 1
+- **3 puntos:** Paso 2 y Paso 3 (según rúbrica del profesor)
+- **2 puntos:** Paso 4
+- **3 puntos:** Paso 5 (1,5 por consulta)
 
-- Conexión a Internet.
-- Cuenta de Gmail `@fpfrioja` para acceder a Colab.
-- Tutoriales de Colab.
+---
 
-## Consejos y recomendaciones
+# Indicaciones de entrega (resumen)
+- Entregar **un único archivo** (.zip/.7z/.rar) con el convenio de nombre `<iniciales><unidad>`, por ejemplo `JGR01.zip`.
+- Si hay varios archivos/notebooks/scripts, meterlos en **una carpeta sin subcarpetas** y comprimir.
+- Fuera de plazo: “no apta” / “0” según tipo de tarea.
+- Copia total/parcial: “no apta” / “0”.
 
-- Estudia los contenidos teóricos de la unidad; comprender los conceptos te ayudará a entender los procesos y los códigos.
-- Sigue los tutoriales de Colab para familiarizarte con la herramienta.
-- Es muy recomendable que trabajes todos los cuadernos de la unidad antes de abordar la tarea.
-- Accede a cada uno de los cuadernos de tareas y cópialo en tu Google Drive o en tu repositorio de Git.
-
-## Indicaciones de entrega
-
-### Nombre del archivo
-Formato: `<iniciales><número de unidad>`
-
-Ejemplo:
-- Juan García Rodríguez, unidad 1: `JGR01.zip`
-
-### Entrega de varios archivos
-
-- Solo se permite la entrega de un archivo por tarea.
-- En caso de tener que entregar varios cuadernos de Colab o scripts de código:
-   - Crea una carpeta con el mismo convenio de nombre anterior.
-   - Esa carpeta no debe contener subcarpetas adicionales.
-   - Comprímela en formato `.zip`, `.7z` o `.rar` y envíala.
-
-Ejemplo: `JGR01.zip`
-
-### Plazos de entrega
-
-- Toda práctica entregada fuera de plazo constará como "no apta" (si es Tarea de Refuerzo) o "0" (si es Tarea de Evaluación).
-
-### Copia total o parcial de prácticas
-
-- En caso de detectar copia total o parcial, se puntuará como "no apta" (Tarea de Refuerzo) o "0" (Tarea de Evaluación) a todas las entregas que coincidan.
