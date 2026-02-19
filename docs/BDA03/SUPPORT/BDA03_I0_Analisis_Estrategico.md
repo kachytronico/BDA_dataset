@@ -1,18 +1,20 @@
+# BDA03_I0 — Análisis Estratégico (prioridades y riesgos)
 
-# BDA03_I0 — Análisis Estratégico
+## Objetivo evaluable
+Entregar un flujo completo:
+Importación automática → Pandas → Pig (2 cambios + tratamiento) → Spark→Hive (2 tablas) → HQL (2 JOIN).
 
-## Prioridad por puntos
-1. Spark/HQL (3)
-2. Pandas (3)
-3. Pig (2)
-4. Dataset (1)
-5. Importación (1)
+## Prioridades (por puntos)
+1) Pig (2 correcciones + tratamiento) y que deje outputs claros.
+2) Spark→Hive: 2 tablas y evidencias (`SHOW TABLES`, `COUNT`).
+3) HQL: 2 consultas con JOIN real y outputs visibles.
 
-## Riesgos técnicos
-- JOIN incorrecto
-- Spark sin Hive support
-- No demostrar corrección -9
+## Riesgos típicos
+- Java incorrecta (no 17).
+- Pig falla por rutas/espacios o por STORE.
+- Hive no crea tablas por falta de `enableHiveSupport()`.
+- Consultas HQL sin JOIN (no valen).
 
-## Estrategia
-Planificar JOIN antes de cargar Hive.
-Validar cada bloque antes de continuar.
+## Estrategia de blindaje
+- Cada sección: título → código → outputs → conclusiones con números reales.
+- No optimizar: mantener el estilo simple de cuadernos 0301 y 0305.
